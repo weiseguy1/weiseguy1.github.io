@@ -1,0 +1,25 @@
+baseURL = 'https://weiseguy.com/'
+defaultContentLanguage = "en"
+languageCode = "en-us"
+
+title = 'The journey from Sys Admin to Dev Ops'
+theme = 'gokarna'
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    url = "/posts/"
+    pre = ""
+    post = ""
+    name = "Posts"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    url = "/tags/"
+    name = "Tags"
+    weight = 2
+  [[menu.main]]
+    identifier = "github"
+    url = "https://github.com"
+    weight = 3
+    pre = "<span data-feather='github'></span>"
