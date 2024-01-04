@@ -2,24 +2,43 @@ baseURL = 'https://weiseguy.com/'
 defaultContentLanguage = "en"
 languageCode = "en-us"
 
-title = 'The journey from Sys Admin to Dev Ops'
+title = 'Weiseguy'
 theme = 'gokarna'
+
+[params]
+  avatarURL = "/images/avatar.png"
+  description = "The Journey from Sys Admin to Dev Ops"
+  ShowBackToTopButton = true
+  metaKeywords = ["blog", "gokarna", "hugo"]
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 3
+    ordered = false
+
 
 [menu]
   [[menu.main]]
+    identifier = "Home"
+    url = "https://weiseguy.com"
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    weight = 1
+  [[menu.main]]
     identifier = "posts"
     url = "/posts/"
-    pre = ""
-    post = ""
     name = "Posts"
-    weight = 1
+    pre = "<span data-feather='book'></span>"
+    weight = 2
   [[menu.main]]
     identifier = "tags"
     url = "/tags/"
     name = "Tags"
-    weight = 2
+    pre = "<span data-feather='tag'></span>"
+    weight = 3
   [[menu.main]]
     identifier = "github"
-    url = "https://github.com"
-    weight = 3
+    url = "https://github.com/weiseguy1"
+    weight = 4
     pre = "<span data-feather='github'></span>"
