@@ -1,4 +1,4 @@
-baseURL = 'https://weiseguy.com/'
+baseURL = 'https://weiseguy.net/'
 defaultContentLanguage = "en"
 languageCode = "en-us"
 
@@ -21,7 +21,7 @@ theme = 'gokarna'
 [menu]
   [[menu.main]]
     identifier = "Home"
-    url = "https://weiseguy.com"
+    url = "https://weiseguy.net"
     name = "Home"
     pre = "<span data-feather='home'></span>"
     weight = 1
