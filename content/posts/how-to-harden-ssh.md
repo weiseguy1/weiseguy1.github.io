@@ -2,7 +2,7 @@
 title: "How to Harden SSH"
 date: 2024-01-03T12:29:20-06:00
 description: "Making the Secure Shell even more secure ...shell"
-draft: true
+draft: false
 type: "post"
 tags: ["blueteam", "linux", "security", "ex200"]
 showTableOfContents: true
@@ -64,11 +64,80 @@ Now that you can ssh with public/private key pairs, its now time to harden ssh i
 ```
 sudo vim /etc/ssh/ssh_config
 ```
+Once you are in the file, you can enable an option for ssh by removing the `#` next to the item.
+
 ### Configure Idle Timeout
+Lets start with configuring the idle timer within ssh. In the first option, it is the amount of time in seconds before 
+the server will send a null packet to make sure the server is alive. The second option is the number of times the server 
+sends a null packet to the client before disconnecting. In this case, the server will wait 600 seconds before sending a null 
+packet and will only do so 5 times.
+
+```
+ClientAliveInterval 600
+ClientAliveCountMax 5
+```
+
 ### Disable Root Login
+This option is pretty self explanitory, but this will disable anyone from connecting to the server as root.
+
+```
+PermitRootLogin no
+```
+
 ### Disable Empty Passwords
+This option disabled a user from having an empty password to connect to the server.
+
+```
+PermitEmptyPasswords no
+```
+
 ### Limit User SSH Access
+This option limits the users that are able to connect to the server based on the username used to connect. In this case 
+the only two users able to connect would be user1 and user2
+
+```
+AllowUsers user1 user2
+```
+
 ### Using a Different Port
-### Specifying SSH Keys
+Finally, this option changes the default port of SSH from 22 to one of the administrators choosing. In this case, the port 
+would be `2024`. 
+
+```
+Port 2024
+```
+
+To test to see if this option works, open a second terminal on your computer and run this command: 
+```
+ssh -p 2024 user1@server
+```
+
+the `-p` flag allows you to use a different port from the default.
+
+## Saving the configuration
+
+After configuring all of the options listed above, restart the ssh daemon on the server. If you're using SystemD as the init system for the server, run:
+```
+sudo systemctl restart sshd
+```
+
+Next, on the client side in your `~/.ssh` directory, create a file named `config` and place this info:
+```
+Host serveralias
+    HostName server
+    User user1
+    Port 2024
+    IdentifyFile ~/.ssh/id_ed25519
+```
+
+Save the file, the run:
+```
+ssh serveralias
+```
+
+## Conclusion
+
+In this article, you've been shown how to create a ssh public/private key pair. How to upload the public key securely, and how to harden SSH against malicous actors.
+If you have any questions, please feel free to reach out to me.
 
 
