@@ -6,7 +6,7 @@ title = 'Weiseguy'
 theme = 'gokarna'
 
 [params]
-  avatarURL = "/images/avatar.png"
+  avatarURL = "/images/logos/logo.png"
   description = "The Journey from Sys Admin to Dev Ops"
   ShowBackToTopButton = true
   metaKeywords = ["blog", "gokarna", "hugo"]
