@@ -8,7 +8,9 @@ tags: ["blueteam", "linux", "security", "ex200"]
 showTableOfContents: true
 ---
 
-## Intro
+![harden SSH Image](/images/posts/rhcsa/harden-ssh/harden-ssh.png)
+
+## Introduction
 
 If you are studying for your Red Hat Linux Certified System Administrator (RHCSA) Exam like I am,
 then knowing how to secure SSH is a requirement that is guaranteed to show up. Even if you are not,
