@@ -47,7 +47,7 @@ To break the flags in this command down:
 
 ### Test the key
 
-To test your ssh keys, you are going to need to copy your public key to the servers `~/.ssh/authorized_keys` file. To do this, run the command:
+To test your ssh keys, you are going to need to copy your public key to the server's `~/.ssh/authorized_keys` file. To do this, run the command:
 ```
 ssh-copy-id -i ~/.ssh/id_ed25519 username@server
 ```
