@@ -29,7 +29,7 @@ time. This can be amplified when you have 20, 40 or more servers to administer. 
 ssh public/private key pair was created. Normally by default, ssh will generate the RSA key pair at 2048-bit.
 This can be a problem as a 2048-bit RSA key is not quite safe anymore to use. Thankfully this can be changed! 
 
-In this section, we'll generate the ed25519 ssh key pair type *(I know, rolls of the tongue, right?!)*. This key 
+In this section, we'll generate the ed25519 ssh key pair type *(I know, rolls off the tongue, right?!)*. This key 
 pair is the most secure type of key pair and is the most recommended key pair one can generate at the time of this 
 writing. 
 
