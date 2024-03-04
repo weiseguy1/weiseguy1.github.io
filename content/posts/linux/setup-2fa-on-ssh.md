@@ -8,7 +8,7 @@ tags: ["blueteam", "linux", "security"]
 showTableOfContents: true
 ---
 
-![2FA on SSH]()
+![2FA on SSH](/images/posts/linux/setup-2fa-on-ssh/2faSSH.png)
 
 ## Introduction
 
@@ -54,7 +54,7 @@ It will then ask you a few questions, which can be answered with the default of 
 ```
 Do you want authentication tokens to be time-based (y/n) y
 ```
-![Google Auth QR]()
+![Google Auth QR](/images/posts/linux/setup-2fa-on-ssh/image-1.png)
 
 Go ahead and scan the QR code that is generated on the terminal into you authenticator app. The app on your phone will then generate a code, usually a set of 6 digits. Enter that code back into the terminal, which it will respond back with a set of recovery codes. Copy those codes into a safe place, like a password manager. Finally, answer the rest of the questions to finish the configuration.  
 
@@ -76,6 +76,50 @@ By default, this limits attackers to no more than 3 login attempts every 30s.
 Do you want to enable rate-limiting? (y/n) y
 ```
 
+## Configuring SSH for OTP
+
+Now we need to configure SSH to prompt for the OTP password. To do this we need to edit the `/etc/pam.d/sshd` using your favorite text editor.
+```
+sudo vi /etc/pam.d/sshd
+```
+
+Add this line to the end of the file
+```
+auth 	   required     pam_google_authenticator.so
+```
+
+Next, we need to edit the `/etc/ssh/sshd_config` file
+```
+sudo vi /etc/ssh/sshd_config
+```
+
+Search for and change the line `ChallengeResponseAuthentication no` to `ChallengeResponseAuthentication yes`. This will allow for the OTP code prompt to apear after a successful SSH key authentication.
+```
+ChallengeResponseAuthentication yes
+```
+
+Also we need to find `KbdInteractiveAuthentication` and change its response to `yes`. The older alias for this, `ChallengeResponseAuthentication` is depricated and no longer used.
+```
+KbdInteractiveAuthentication yes
+```
+
+AuthenticationMethods publickey,keyboard-interactive
+The last item in the SSH config that needs to be changed is for the `AuthenticationMethods` alias. We need to let this option know about the SSH key pair with `publickey` and about the OTP code with `keyboard-interactive`. Add this line to the bottom of the config.
+
+```
+AuthenticationMethods publickey,keyboard-interactive
+```
+
+Finally, we need to restart the SSH daemon 
+```
+sudo systemctl restart sshd
+```
+
+If you do not get any errors, go ahead and open another terminal and try to ssh to the host. You should be prompted to enter in the code from your 2FA app of choice. After you enter the code, it should land you at the bash prompt. 
+
+## Conclusion
+
+Congrats! You've successfully enabled 2FA on SSH. With this enabled, your servers are just that more secure. If you have any issues, please feel free to check out the troubleshooting section to see if there is anything that can help you. If you've enjoyed this, please check out some of my other articles.
 
 ## Troubleshooting
 
@@ -111,7 +155,13 @@ Finally with that installed, go ahead and search for the `google-authenticator` 
 dnf search google-authenticator
 ```
 
+### SELinux: google_authenticator-* access denied 
+
+If your system is running SELinux, then you might run into an issue with using the google-authenticator PAM module. 
+
 ## References
-https://www.redhat.com/sysadmin/mfa-linux
-https://www.digitalocean.com/community/tutorials/how-to-set-up-multi-factor-authentication-for-ssh-on-ubuntu-18-04
-https://wiki.rockylinux.org/rocky/repo/#community-approved-repositories
+- https://www.redhat.com/sysadmin/mfa-linux
+- https://www.digitalocean.com/community/tutorials/how-to-set-up-multi-factor-authentication-for-ssh-on-ubuntu-18-04
+- https://wiki.rockylinux.org/rocky/repo/#community-approved-repositories
+- https://github.com/google/google-authenticator-libpam/issues/93
+- https://bugzilla.redhat.com/show_bug.cgi?id=1840113
