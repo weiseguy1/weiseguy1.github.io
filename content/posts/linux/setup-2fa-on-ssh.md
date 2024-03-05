@@ -2,7 +2,7 @@
 title: "Setup 2FA on SSH"
 date: 2024-03-01T18:58:19-06:00
 description: "Setting up OATH-TOTP on SSH servers"
-draft: true
+draft: false
 type: "post"
 tags: ["blueteam", "linux", "security"]
 showTableOfContents: true
@@ -157,7 +157,29 @@ dnf search google-authenticator
 
 ### SELinux: google_authenticator-* access denied 
 
-If your system is running SELinux, then you might run into an issue with using the google-authenticator PAM module. 
+If your system is running SELinux, then you might run into an issue with using the google-authenticator PAM module as it creates a temporary file used in authentication. SELinux blocks this by default because the `google-authenticator` module does not have the permission granted by SELinux policies to create files in the users home directory. There are two ways to solve this:
+
+1. Create a new directory and give that the necessary SELinux permissions
+2. Place the `.google_authenticator` file into the `.ssh` directory. Run `restorecon` on the directory to get the correct permisions. Finally edit the pam config file to point to the new directory. 
+
+In this troubleshooting section, we'll be going with the second option. 
+
+First, move the `.google_authenticator` file into the `.ssh` directory
+```
+mv .google_authenticator ~/.ssh/google_authenticator
+```
+
+Next set the necessary permissions
+```
+restorecon -Rv .ssh/
+```
+
+Finally, edit the `/etc/pam.d/sshd` configuration file to point to the new location of the authenticator file.
+```
+pam_google_authenticator.so   secret=~/.ssh/google_authenticator
+```
+
+Once this is done, try logging in from a new terminal. You should be able to enter in your code from the 2FA app of your choice and be able to login with SELinux enabled.
 
 ## References
 - https://www.redhat.com/sysadmin/mfa-linux
