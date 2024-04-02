@@ -37,12 +37,12 @@ theme = 'gokarna'
     name = "Tags"
     pre = "<span data-feather='tag'></span>"
     weight = 3
-#  [[menu.main]]
-#   identifier = "library"
-#   name = "Library"
-#   url = "library/"
-#   pre = "<span data-feather='book-open'></span>"
-#   weight = 4
+  [[menu.main]]
+    identifier = "library"
+    name = "Library"
+    url = "library/"
+    pre = "<span data-feather='book-open'></span>"
+    weight = 4
   [[menu.main]]
     identifier = "about"
     name = "About"
