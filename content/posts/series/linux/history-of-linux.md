@@ -9,7 +9,7 @@ showTableOfContents: true
 tags: ["Linux", "History", "Series", "Paths", "DevOps"]
 ---
 
-![History of Linux Logo](/images/posts/linux/series/history-of-linux.png)
+![History of Linux Logo](/images/posts/series/linux/history-of-linux.png)
 
 ## Introduction
 

@@ -9,7 +9,7 @@ showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]
 ---
 
-![Editing Logo](/images/posts/vim/series/editing.png)
+![Editing Logo](/images/posts/series/vim/editing.png)
 
 ## Introduction
 

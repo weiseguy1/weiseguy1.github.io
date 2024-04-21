@@ -9,7 +9,7 @@ showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]
 ---
 
-![Image Name](/images/posts/vim/series/movement.png)
+![Image Name](/images/posts/series/vim/movement.png)
 
 ## Introduction
 

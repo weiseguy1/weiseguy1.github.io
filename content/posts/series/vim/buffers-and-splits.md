@@ -9,7 +9,7 @@ showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]
 ---
 
-![Buffers Logo](/images/posts/vim/series/buffers.png)
+![Buffers Logo](/images/posts/series/vim/buffers.png)
 
 ## Introduction
 

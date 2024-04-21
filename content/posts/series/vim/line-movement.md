@@ -9,7 +9,7 @@ showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]
 ---
 
-![Line Movement Logo](/images/posts/vim/series/line-movement.png)
+![Line Movement Logo](/images/posts/series/vim/line-movement.png)
 
 ## Introduction
 
