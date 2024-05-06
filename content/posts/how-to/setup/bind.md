@@ -8,7 +8,7 @@ tags: ["linux", "dns", "administration"]
 showTableOfContents: true
 ---
 
-![2FA on SSH](/images/posts/linux/how-to-setup-bind9/setupBind9.png)
+![2FA on SSH](/images/posts/how-to/setup/bind/cover.png)
 
 ## Introduction
 

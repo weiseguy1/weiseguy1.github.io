@@ -1,5 +1,5 @@
 ---
-title: "Docker Series Cheatsheet"
+title: "Docker CLI Cheatsheet"
 date: 2022-08-08T08:39:56-05:00
 description: "License to Krill"
 author: "Kyle Weise"
@@ -9,7 +9,7 @@ showTableOfContents: false
 tags: ["Docker", "Containers", "DevOps", "Linux", "Cheatsheet"]
 ---
 
-![Cover Art](/images/posts/docker/series/cheatsheet.png)
+![Cover Art](/images/posts/cheatsheets/docker/cover.png)
 
 ## Basic Docker Commands
 

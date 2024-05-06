@@ -1,22 +1,22 @@
 ---
-title: "The Docker Series: Explained"
+title: "Docker Crash Course"
 date: 2022-08-13T08:39:56-05:00
-description: "I can't contain my excitement"
+description: "I can't 'contain'erize my excitement"
 author: "Kyle Weise"
 draft: false
 type: "post"
 showTableOfContents: true
-tags: ["Docker", "Containers", "DevOps", "Linux", "Explained" ]
+tags: ["Docker", "Containers", "DevOps", "Crash-Course"]
 ---
 
-![Explained Logo](/images/posts/docker/series/explained.png)
+![Explained Logo](/images/posts/crash-course/docker/cover.png)
 
 ## Introduction
 
-Hello everyone, and welcome back to my blog. In this series we will be looking at one of the 
-more popular and well known containerization technologies on the market, Docker :whale:. Now, this is 
+Hello everyone, and welcome back to my blog. In this crash course we will be looking at one of the 
+more popular and well known containerization technologies on the market, Docker. Now, this is 
 going to be a longer, in-depth posts, so if that isn't your thing, you might want
-checkout my [Docker Cheatsheet](/posts/docker/series/cheatsheet/). However, if you like to get a 
+checkout my [Docker CLI Cheatsheet](/posts/docker/series/cheatsheet/). However, if you like to get a 
 better understanding of Docker and how it works, then you came to the right place. All this posts 
 assumes is that you have docker installed on your PC. With that said, let's begin.  
 
@@ -51,7 +51,7 @@ tens of GBs. VMs can also be slow to boot.
 
 To make that a little bit easier to understand, lets look at *Figure 1*
 
-![Figure 1](/images/posts/docker/series/explained-fig-01.png)
+![Figure 1](/images/posts/crash-course/docker/explained-fig-01.png)
 
 Here you can see perfectly why containers are such a useful application in comparison to VMs. On the left-hand side, you see a system for containerized 
 applications. The only overhead of that system is docker. On the right-hand side, you see a system for VMs. That system's overhead is not only the
@@ -74,7 +74,7 @@ docker pull nginx && docker run -d -p 8080:80 nginx:latest
 
 Then, you go to `localhost:8080` in your browser, you will see this:
 
-![Nginx Welcome Page](/images/posts/docker/series/explained-fig-02.png)
+![Nginx Welcome Page](/images/posts/crash-course/docker/explained-fig-02.png)
 
 If you were curious and looked at my [Docker Cheatsheet](/posts/docker/series/cheatsheet/), then you would know that the first docker command pulls 
 the nginx image from [DockerHub](https://hub.docker.com). The second command runs the latest version of a nginx container in the background and points 

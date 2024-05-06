@@ -8,7 +8,7 @@ tags: ["linux", "ex200", "storage"]
 showTableOfContents: true
 ---
 
-![setup NFS Image](/images/posts/rhcsa/setup-nfs/setup-nfs.png)
+![setup NFS Image](/images/posts/how-to/setup/nfs/cover.png)
 
 To share drives between Unix-like systems, the best way to do that is through Network File Share 
 or NFS for short. As one of the objectives for the Red Hat Certified System Administrator (RHCSA) 

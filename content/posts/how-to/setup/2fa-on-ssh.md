@@ -8,7 +8,7 @@ tags: ["blueteam", "linux", "security"]
 showTableOfContents: true
 ---
 
-![2FA on SSH](/images/posts/linux/setup-2fa-on-ssh/2faSSH.png)
+![2FA on SSH](/images/posts/how-to/setup/2fa-on-ssh/cover.png)
 
 ## Introduction
 

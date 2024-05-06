@@ -8,7 +8,7 @@ tags: ["blueteam", "linux", "security", "ex200"]
 showTableOfContents: true
 ---
 
-![harden SSH Image](/images/posts/rhcsa/harden-ssh/harden-ssh.png)
+![harden SSH Image](/images/posts/how-to/harden/ssh/cover.png)
 
 ## Introduction
 

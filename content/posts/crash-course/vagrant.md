@@ -4,11 +4,11 @@ date: 2024-04-30T18:44:03-05:00
 description: "An Introduction into Virtualization Automation"
 draft: true
 type: "post"
-tags: ["vagrant", "devops", "virtualization"]
+tags: ["vagrant", "devops", "virtualization", "crash course"]
 showTableOfContents: true
 ---
 
-![Cover Art](/images/posts/vagrant/vagrant-crash-course.png)
+![Cover Art](/images/posts/crash-course/vagrant/cover.png)
 
 # Introduction
 
@@ -48,6 +48,15 @@ You can install Vagrant by going to [vagrantup](https://developer.hashicorp.com/
 ## Plugins
 
 Vagrant uses Virtualbox as the default provider to manage your VMs. It also ships with support for other hypervisors such as VMware Workstation, Hyper-V and even Docker. However, if your run Linux like me and like to use QEMU/KVM as your hypervisor of choice, then you are going to need to install a plugin to get vagrant to work properly. 
+
+| Command | Description |
+| --- | --- |
+| vagrant plugin install <plugin> | Install the defined plugin |
+| vagrant plugin update <plugin> | Update the defined plugin |
+| vagrant plugin repair | Repair failing plugins |
+| vagrant plugin license <license_file> | Add license to the proprietary plugin |
+| vagrant plugin uninstall <plugin> | Removes the plugin |
+| vagrant plugin expunge | Removes all plugins, dependencies, and metadata | 
 
 
 
