@@ -8,7 +8,7 @@ tags: ["az-900", "azure", "devops", "series"]
 showTableOfContents: true
 ---
 
-![Cover Art](/images/posts/series/az-900/azure-series-day-10-security.png)
+![Cover Art](/images/posts/series/az-900/day-10/cover.png)
 
 ## Defense in Depth
 

@@ -1,5 +1,5 @@
 ---
-title: "Vim Series: Buffers & Splits"
+title: "Vim Day 04: Buffers & Splits"
 date: 2022-09-08T21:19:20-05:00
 description: "The 4th and final part of how to use vim"
 author: "Kyle Weise"
@@ -9,7 +9,7 @@ showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]
 ---
 
-![Buffers Logo](/images/posts/series/vim/buffers.png)
+![Buffers Logo](/images/posts/series/vim/day-04/cover.png)
 
 ## Introduction
 

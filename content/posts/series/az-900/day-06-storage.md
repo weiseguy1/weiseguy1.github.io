@@ -8,7 +8,7 @@ tags: ["az-900", "azure", "devops", "series"]
 showTableOfContents: true
 ---
 
-![Cover Art](/images/posts/series/az-900/azure-series-day-06-storage.png)
+![Cover Art](/images/posts/series/az-900/day-06/cover.png)
 
 ## Introduction 
 Storage Account = Unique Azure Namespace

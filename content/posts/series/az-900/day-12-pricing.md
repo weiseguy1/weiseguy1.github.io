@@ -8,4 +8,6 @@ tags: ["az-900", "azure", "devops", "series"]
 showTableOfContents: true
 ---
 
-![Cover Art](/images/posts/series/az-900/azure-series-day-12-pricing.png)
+![Cover Art](/images/posts/series/az-900/day-12/cover.png)
+
+## Introduction

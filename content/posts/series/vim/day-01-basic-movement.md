@@ -1,5 +1,5 @@
 ---
-title: "Vim Series: Movement"
+title: "Vim Day 01: Movement"
 date: 2022-08-21T13:27:08-05:00
 description: "The 1st part of the vim series"
 author: "Kyle Weise"
@@ -9,7 +9,7 @@ showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]
 ---
 
-![Image Name](/images/posts/series/vim/movement.png)
+![Image Name](/images/posts/series/vim/day-01/cover.png)
 
 ## Introduction
 

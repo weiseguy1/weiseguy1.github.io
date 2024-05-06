@@ -1,5 +1,5 @@
 ---
-title: "Vim Series: Line Movement"
+title: "Vim Day 03: Line Movement"
 date: 2022-09-07T09:41:46-05:00
 description: "The 3rd part of the vim series"
 author: "Kyle Weise"
@@ -9,7 +9,7 @@ showTableOfContents: true
 tags: ["Vi", "Vim", "Neovim", "Series", "Text Editor"]
 ---
 
-![Line Movement Logo](/images/posts/series/vim/line-movement.png)
+![Line Movement Logo](/images/posts/series/vim/day-03/cover.png)
 
 ## Introduction
 

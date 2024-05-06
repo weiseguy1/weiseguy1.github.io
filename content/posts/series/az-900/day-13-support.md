@@ -8,4 +8,6 @@ tags: ["az-900", "azure", "devops", "series"]
 showTableOfContents: true
 ---
 
-![Cover Art](/images/posts/series/az-900/azure-series-day-13-support.png)
+![Cover Art](/images/posts/series/az-900/day-13/cover.png)
+
+## Introduction
