@@ -24,24 +24,24 @@ To fully understand what Vagrant does, we first have to know what virtualization
 This means we can take a single machine, in this case your laptop or desktop, to create as many virtual machines, also known as guest operating systems, as your system can allow. In other words, think of your machine as a box, every time you create a virtual machine or VM, you would then be placing a smaller box inside of the large one very similar to what this image below shows. 
 
 
-![VM boxes](/images/posts/vagrant/image-1.png)
+![VM boxes](/images/posts/crash-course/vagrant/image-1.png)
 
 ## What is a Hypervisor?
 
 Ok, so a VM is a virtualized instance of an OS that can run on your machine. But, how is the VM made? This is done through a piece of software known as a Hypervisor. A Hypervisor comes to 2 different types:
 - Type I Hypervisor: A hypervisor that runs bare metal on the host without an underlying operating system
-![Type I Hypervisor](/images/posts/vagrant/image-2.png)
+![Type I Hypervisor](/images/posts/crash-course/vagrant/image-2.png)
 ***Examples: Hyper-V, VMware Esxi, Proxmox VE***
 
 - Type II Hypervisor: A hypervisor that runs on top of the operating system as a service or process 
-![Type I Hypervisor](/images/posts/vagrant/image-3.png)
+![Type I Hypervisor](/images/posts/crash-course/vagrant/image-3.png)
 ***Examples: Oracle Virtualbox, VMware Workstation, Parallels Desktop***
 
 
 ## What is Vagrant?
 
 Vagrant is an automation tool, written in Ruby, that wraps around virtualization technologies and helps manage our development environment workflow. The configuration of such environments is done through files called a `Vagrantfile`, which can be shared to replicate instances. 
-![Vagrant in the stack](/images/posts/vagrant/image-4.png)
+![Vagrant in the stack](/images/posts/crash-course/vagrant/image-4.png)
 
 You can install Vagrant by going to [vagrantup](https://developer.hashicorp.com/vagrant/install) and install it based on your operating system.
 
