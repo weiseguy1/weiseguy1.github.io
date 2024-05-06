@@ -54,7 +54,7 @@ It will then ask you a few questions, which can be answered with the default of 
 ```
 Do you want authentication tokens to be time-based (y/n) y
 ```
-![Google Auth QR](/images/posts/linux/setup-2fa-on-ssh/image-1.png)
+![Google Auth QR](/images/posts/how-to/setup/2fa-on-ssh/image-1.png)
 
 Go ahead and scan the QR code that is generated on the terminal into you authenticator app. The app on your phone will then generate a code, usually a set of 6 digits. Enter that code back into the terminal, which it will respond back with a set of recovery codes. Copy those codes into a safe place, like a password manager. Finally, answer the rest of the questions to finish the configuration.  
 
