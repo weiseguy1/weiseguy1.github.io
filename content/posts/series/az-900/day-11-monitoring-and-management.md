@@ -117,11 +117,45 @@ Action group = actions taken when rule is triggered
 
 In all scenarios, when something is not working as expected, Azure Monitor alerts inform the right group to do something about it.
 
-
-
 ## Azure Service Health
 
+Notifies you about any planned and unplanned incidents on the platform.
+Maintenance - Azure needs to be updated and maintained just like any other computing infrastructure
+
+Features:
+1. Dashboard - A personalized dashboard to highlight service issues affecting your resources.
+2. Custom Alerts - Get notified of planned and non-planned outages. Alerts are simple to set up and customize
+3. Real-Time Tracking - Track any alerts and issues in real-time and get full reports once resolved.
+4. Free Service - The Azure Service Health service is completely free.
+
 ## Compliance
+
+Scenario - Europe
+If companies within the EU don't take compliance seriously, they can face massive fines.
+
+Industry Regulations
+- General Data Protection Regulation - Main objective is to protect individuals and processing of their data. It gives control of personal data back to the individual, instead of the company owning it. Companies are required to implement a lot of tools for consumers to control their data.
+- ISO Standard - Many different ISO categories, such as compliance with quality and customer satisfaction. Most common ISO 9001:2008. Also includes food safety and environmental management.
+- NIST - National Institute of Standards and Technology. Focuses purely on the tech industry. Developed primarily for US Federal agencies. Compliance with NIST means compliance with multiple Federal US regulations.
+
+Azure Compliance Manager - Azure knows about compliance and resources, and can give you recommendations through the Compliance Manager.
+Benefits:
+- Recommendations - Get recommendations for ensuring compliance with GDPR, ISO, NIST and others.
+- Tasks - Assign compliance tasks to team members and track progress
+- Compliance Score - Chase a perfect score to be 100% compliant
+- Secure Storage - Upload documents to prove compliance and store them security.
+- Reports - Get reports of compliance data to provide to managers and auditors. 
+
+Azure Goverment Cloud
+- Dedicated Regions - If you are a US govermenment body or contract for one, you can get access. The Goverment Cloud consists of dedicated separate datacenters.
+- Exclusivity - You are guaranteed only screened personnel from US federal, state and local government have access
+- Compliance - Ensure compliance with required US government agencies, and level 5 Department of Defense approval.
+- Azure Benefits - You get standard Azure cloud Benefits: high availability, scalability and managed resources.
+
+China Region
+- Located in China - Azure datacenter is physically located within China and has no connection outside of China, including other Azure regions.
+- Data is Kept in China - All customer data is kept inside Chinese borders. Certain global Azure services won't work fully.
+- Compliant - You are ensured compliance with Chinese regulations at all times.
 
 ## Privacy
 

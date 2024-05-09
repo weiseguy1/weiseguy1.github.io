@@ -47,7 +47,14 @@ You can install Vagrant by going to [vagrantup](https://developer.hashicorp.com/
 
 ## Plugins
 
-Vagrant uses Virtualbox as the default provider to manage your VMs. It also ships with support for other hypervisors such as VMware Workstation, Hyper-V and even Docker. However, if your run Linux like me and like to use QEMU/KVM as your hypervisor of choice, then you are going to need to install a plugin to get vagrant to work properly. 
+Vagrant uses Virtualbox as the default provider to manage your VMs. It also ships with support for other hypervisors such as VMware Workstation, Hyper-V and even Docker. However, if your run Linux like me and like to use QEMU/KVM as your hypervisor of choice, then you are going to need to install a plugin to get vagrant to work properly. To do this, we can are going to need to run this command:
+```
+vagrant plugin install vagrant-libvirt
+```
+
+This will install the libvirt provider for vagrant and allow you to use it immediately. If you need to use another provider, then you can search [Vagrant's Plugin List](https://github.com/hashicorp/vagrant/wiki/Available-Vagrant-Plugins) to find the right plugins for you. However, please note that a majority of the plugins are not supported by HashiCorp and should be used at your own risk.  
+
+For any other plugin related commands, please see the table below that shows the command and a short description on it.
 
 | Command | Description |
 | --- | --- |
@@ -58,6 +65,10 @@ Vagrant uses Virtualbox as the default provider to manage your VMs. It also ship
 | vagrant plugin uninstall <plugin> | Removes the plugin |
 | vagrant plugin expunge | Removes all plugins, dependencies, and metadata | 
 
+
+# The Basics
+
+In vagrant, the virtual machines that are created are based off of images known as boxes. These boxes can be as simple as a bare Debian image or contain a full application environment.
 
 
 ## References
