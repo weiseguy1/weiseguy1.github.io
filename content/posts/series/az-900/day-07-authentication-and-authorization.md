@@ -1,5 +1,5 @@
 ---
-title: "AZ-900 Day 08: Authentication and Authorization"
+title: "AZ-900 Day 07: Authentication and Authorization"
 date: 2024-05-05T18:45:18-05:00
 description: ""
 draft: true
@@ -8,7 +8,7 @@ tags: ["az-900", "azure", "devops", "series"]
 showTableOfContents: true
 ---
 
-![Cover Art](/images/posts/series/az-900/day-08/cover.png)
+![Cover Art](/images/posts/series/az-900/day-07/cover.png)
 
 ## Identity Services
 

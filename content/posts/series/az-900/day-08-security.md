@@ -1,5 +1,5 @@
 ---
-title: "AZ-900 Day 10: Security"
+title: "AZ-900 Day 08: Security"
 date: 2024-05-04T18:45:40-05:00
 description: ""
 draft: true
@@ -8,7 +8,7 @@ tags: ["az-900", "azure", "devops", "series"]
 showTableOfContents: true
 ---
 
-![Cover Art](/images/posts/series/az-900/day-10/cover.png)
+![Cover Art](/images/posts/series/az-900/day-08/cover.png)
 
 ## Defense in Depth
 

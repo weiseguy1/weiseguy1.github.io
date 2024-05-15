@@ -1,5 +1,5 @@
 ---
-title: "AZ-900 Day 11: Monitoring and Management"
+title: "AZ-900 Day 09: Monitoring and Management"
 date: 2024-05-05T18:45:54-05:00
 description: ""
 draft: true
@@ -8,7 +8,7 @@ tags: ["az-900", "azure", "devops", "series"]
 showTableOfContents: true
 ---
 
-![Cover Art](/images/posts/series/az-900/day-11/cover.png)
+![Cover Art](/images/posts/series/az-900/day-09/cover.png)
 
 ## Introduction
 
@@ -159,6 +159,29 @@ China Region
 
 ## Privacy
 
+1. Azure Information Protection - Classify label and protect data based on data sensitivity
+2. Azure Policy - Define and enforce rules to ensure privacy and external regulations.
+3. Guides - Use guides on Azure to respond and comply with GDPR privacy requests.
+4. Compliance Manager - Make sure you are following privacy guidelines.
+
 ## Trust 
 
+Trust Center and Service Trust Portal
+- Trust Center - Learn about Microsoft's effort on security, privacy, GDPR, data location, compliance and more. A hub for more information about trust in each product and service.
+- Service Trust Portal - Review all the independent reports and audits performed on Microsoft's products and services.
+
 ## Azure Arc
+
+The Challenge of Managing Complex Environments. Computing resources in multiple locations (i.e., Azure, On-Prem, Other Clouds). Each computing sources uses its own management tools. More locations means more management overhead. Also, cannot apply Azure governance polices to non-Azure resources. This is where Azure Arc comes in as it allows management of both Azure and non-Azure resources as well as apply Azure governance polices to non-Azure resources in the same interface. 
+
+The technical definition of Azure Arc is:
+> Centralized governance and management on on-prem and multi-cloud computing resources.
+In short, Azure Arc manages non-Azure resources as if they were in Azure by extending Azure cloud management and services to them. Azure Arc works by installing agents on non-Azure resources that bring them into Azures control plane. 
+
+Benefits:
+1. Manage Azure and non-Azure resources in the same place
+2. Manage non-Azure Kubernetes clusters
+3. Deploy Azure-managed database services to non-Azure locations
+4. Manage and protect non-Azure servers. Monitor non-Azure OSs alongside Azure VMs. Protect with Microsoft Defender for Cloud. Apply Azure Automation runbooks.
+5. Apply Azure governance. (RBAC, Azure Policies, Azure Blueprints)
+6. Deploy Azure serverless services to non-Azure hardware (Azure App Service, Azure Functions, Azure Logic Apps)
