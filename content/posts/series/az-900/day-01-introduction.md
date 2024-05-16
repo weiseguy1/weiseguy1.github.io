@@ -2,7 +2,7 @@
 title: "AZ-900 Day 01: Introduction"
 date: 2024-04-21T15:11:22-05:00
 description: "The foundational information for the AZ-900"
-draft: true
+draft: false 
 type: "post"
 tags: ["az-900", "azure", "devops", "series"]
 showTableOfContents: true
@@ -36,7 +36,7 @@ In this post, we'll cover some basic introductory knowledge, like:
     - Azure Powershell
     - Azure Cloud Shell
 - ARM Templates [^3]
-- Azure Advisor
+- Azure Advisor [^4]
 
 
 ## Azure Portal
@@ -60,11 +60,28 @@ The final CLI that needs to be talked about is Azure Cloud Shell. This shell is 
 
 ## ARM Templates
 
-Azure Resource Manager or ARM for short, is the deployment and management server for Azure. Everything you do in Azure has to go though ARM as it is responsible for creating, updating, and deleting resources on the platform.    
+Azure Resource Manager or ARM for short, is the deployment and management server for Azure. Everything you do in Azure has to go though ARM as it is responsible for creating, updating, and deleting resources on the platform. The way ARM works is, you send Azure a request, ARM takes that request and makes sure that you are both authenticated and authorized to perform that task. ARM then sends the requested action to the specific Azure Service, where it is then processed. The reason why ARM does this is that it makes the results consistent, regardless of what you are using to engage with Azure.
+
+ARM Templates, on the other hand, are templates written in a JSON format that can be used to manage your infrastructure rather than using scripts. By doing this, you can manage your resources in a declaritive and repeatable manager. You can even break down the templates into smaller individual templates to be reused in larger deployments. Also, you can add Azure Powershell or Azure CLI scripts inside the templates or have them called as external programs to make deployments easier and more extensibile. 
 
 ## Azure Advisor
+
+Azure Advisor takes note of your entire Azure environment and then makes suggestions. As to what Azure Advisor suggests, it gives you recommendations in five categories:
+- **Reliability** which is used to make sure the longevity of your business-critical services. 
+- **Security** which covers threats and vulnerabilities.
+- **Performance** which improves speed of the application.
+- **Operational Excellence** which covers workflow efficiency, resource management, and best practices for deployments.
+- **Cost** which can help reduce your overall Azure spending.
+
+Azure Advisor is automatically turned on, but can be managed by search for "Advisor" in the search bar in Azure or can be accessed from the left hand hamburger menu. See the image below. 
+![Azure Advisor](/images/posts/series/az-900/day-01/image-2.png)
+
+## Wrapping it up
+
+That's a lot of studying for one day! In today's article we've covered what the Azure Portal, Azure Command Lines, ARM Templates, Azure Advisor are. When you have some time, please check out these services on your own to get some hands on experience. If you've enjoyed this post, please feel free to check out the other articles on my site. In the next post of this series, we'll go over some cloud concepts which are important to know, like Cloud Service Models, The language and economy of cloud computing, and much more. Stay tuned! 
 
 ## References
 [^1]: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900
 [^2]: https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure
 [^3]: https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates
+[^4]: https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor
