@@ -35,7 +35,7 @@ In this post, we'll cover some basic introductory knowledge, like:
     - Azure CLI
     - Azure Powershell
     - Azure Cloud Shell
-- ARM Templates
+- ARM Templates [^3]
 - Azure Advisor
 
 
@@ -54,16 +54,17 @@ Next up, there are the command lines that accompany Azure. The command lines sho
 - Azure Powershell
 - Azure Cloud Shell
 
-### Azure CLI
+Azure CLI and Azure Powershell are a command line interfaces that is used to interact with Azure. The main difference between the two is Azure CLI is written in Bash, whereas Azure Powershell uses Powershell cmdlets. Both CLIs are cross platform and can be installed on Windows, Linux or Mac. With these tools, you can do simple one time changes to your Azure infrastructure, or you can combine commands together to perform more complex actions in an automated fashion. This allows for a sense of structure in how your resources are managed. 
 
-### Azure Powershell
-
-### Azure Cloud Shell
+The final CLI that needs to be talked about is Azure Cloud Shell. This shell is different as it is not something that can be installed locally. As the name implies, it is a shell that is available in the cloud. This is nice as the Cloud Shell is then available anywhere you have an internet connection, on any device. In the Cloud Shell, you can use either Azure Powershell or Azure CLI to complete your task. It also uses your credentials from logging into Azure to determine your permissions.  
 
 ## ARM Templates
+
+Azure Resource Manager or ARM for short, is the deployment and management server for Azure. Everything you do in Azure has to go though ARM as it is responsible for creating, updating, and deleting resources on the platform.    
 
 ## Azure Advisor
 
 ## References
 [^1]: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900
 [^2]: https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure
+[^3]: https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates
