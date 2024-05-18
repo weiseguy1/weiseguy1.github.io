@@ -1,6 +1,6 @@
 ---
 title: "AZ-900 Day 02: Cloud Concepts"
-date: 2024-04-21T15:11:52-05:00
+date: 2024-04-24T15:11:52-05:00
 description: ""
 draft: true
 type: "post"
@@ -11,3 +11,37 @@ showTableOfContents: true
 ![Cover Art](/images/posts/series/az-900/day-02/cover.png)
 
 ## Introduction
+
+Hey everyone, welcome back to the AZ-900 series. In todays article, we are going to go over Cloud Concepts in Azure. Specifically, we'll be covering:
+
+- Terminology of Cloud Computing [^1]
+- The Consumption-based Model [^2]  
+
+
+## Terminology of Cloud Computing
+
+High Availability
+Reliability
+Scalability
+Predictability
+Security
+Governance
+Manageability
+
+## The Consumption-based Model
+
+CapEx
+OpEx
+
+## Cloud Service Models
+
+## Azure Marketplace
+
+## Cloud Architecture Models
+
+## Wrapping it up
+
+## References
+
+[^1]: https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/
+[^2]: https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model 
