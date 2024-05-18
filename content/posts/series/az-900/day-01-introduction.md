@@ -78,7 +78,7 @@ Azure Advisor is automatically turned on, but can be managed by search for "Advi
 
 ## Wrapping it up
 
-That's a lot of studying for one day! In today's article we've covered what the Azure Portal, Azure Command Lines, ARM Templates, Azure Advisor are. When you have some time, please check out these services on your own to get some hands on experience. If you've enjoyed this post, please feel free to check out the other articles on my site. In the next post of this series, we'll go over some cloud concepts which are important to know, like Cloud Service Models, The language and economy of cloud computing, and much more. Stay tuned! 
+That's a lot of studying for one day! In today's article we've covered what the Azure Portal, Azure Command Lines, ARM Templates, Azure Advisor are. When you have some time, please check out these services on your own to get some hands on experience. If you've enjoyed this post, please feel free to check out the other articles on my site. In the next post of this series, we'll go over cloud concepts which are important to know for the AZ-900. Stay tuned! 
 
 ## References
 [^1]: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900
