@@ -12,3 +12,7 @@ discovery in the fields of Computer Science, Security, Administration, and anyth
 else I find interesting this week. I promise that you won't regret it! 
 
 \- WG
+
+## Certifications
+
+{{< figure src="/images/badges/microsoft-certified-fundamentals-badge.png" link="https://learn.microsoft.com/api/credentials/share/en-us/KyleWeise-1809/F2D84BC2D1A92B0F?sharingId=967494E2D7EA8567" >}}
