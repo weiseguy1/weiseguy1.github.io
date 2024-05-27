@@ -1,6 +1,6 @@
 ---
 title: "AZ-900 Day 09: Monitoring and Management"
-date: 2024-05-05T18:45:54-05:00
+date: 2024-05-15T18:45:54-05:00
 description: ""
 draft: true
 type: "post"

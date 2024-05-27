@@ -1,6 +1,6 @@
 ---
 title: "AZ-900 Day 10: Pricing"
-date: 2024-05-06T18:46:09-05:00
+date: 2024-05-18T18:46:09-05:00
 description: ""
 draft: true
 type: "post"

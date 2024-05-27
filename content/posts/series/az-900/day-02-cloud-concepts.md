@@ -35,9 +35,16 @@ OpEx
 
 ## Cloud Service Models
 
-## Azure Marketplace
+Infrastructure-as-a-Service
+Platform-as-a-Service
+Software-as-a-Service
+Serverless
 
 ## Cloud Architecture Models
+
+Private Cloud
+Public Cloud
+Hybrid Cloud
 
 ## Wrapping it up
 

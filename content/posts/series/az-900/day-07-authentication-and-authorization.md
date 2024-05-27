@@ -1,6 +1,6 @@
 ---
 title: "AZ-900 Day 07: Authentication and Authorization"
-date: 2024-05-05T18:45:18-05:00
+date: 2024-05-09T18:45:18-05:00
 description: ""
 draft: true
 type: "post"

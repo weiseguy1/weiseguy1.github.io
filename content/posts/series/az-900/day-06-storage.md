@@ -1,6 +1,6 @@
 ---
 title: "AZ-900 Day 06: Storage"
-date: 2024-04-21T15:12:58-05:00
+date: 2024-05-06T15:12:58-05:00
 description: ""
 draft: true
 type: "post"

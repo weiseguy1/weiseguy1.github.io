@@ -1,6 +1,6 @@
 ---
 title: "AZ-900 Day 08: Security"
-date: 2024-05-04T18:45:40-05:00
+date: 2024-05-12T18:45:40-05:00
 description: ""
 draft: true
 type: "post"
