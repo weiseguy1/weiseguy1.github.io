@@ -13,7 +13,7 @@ showTableOfContents: true
 ## Introduction
 In today's IT infrastructure, it is more than likely that you will run into Cloud technologies in your workplace. Cloud allows for companies to save money by reducing operating cost and off-loading the cost of physical servers to the cloud provider. In this series, I'll be covering information for the AZ-900, the entry level certification for Microsoft's cloud provider, Azure. 
 
-The AZ-900 covers the basics of what every Azure Cloud Administrator should know. According to Microsoft's Official Study Guide [^1], the exam covers topics:
+The AZ-900 covers the basics of what every Azure Cloud Administrator should know. According to Microsoft's Official Study Guide [^1], the exam covers topics like:
 - Describe cloud concepts (25–30%)
     - Describe cloud computing
     - Describe the benefits of using cloud services
@@ -29,15 +29,7 @@ The AZ-900 covers the basics of what every Azure Cloud Administrator should know
     - Describe features and tools for managing and deploying Azure resources
     - Describe monitoring tools in Azure
 
-In this post, we'll cover some basic introductory knowledge, like:
-- Azure Portal [^2]
-- Azure Command Lines [^2]
-    - Azure CLI
-    - Azure Powershell
-    - Azure Cloud Shell
-- ARM Templates [^3]
-- Azure Advisor [^4]
-
+In this post, we'll cover some basic introductory knowledge of the Azure Portal [^2], Command Lines Options [^2] like Azure CLI, Azure Powershell, and Azure Cloud Shell. Then we will discuss what ARM Templates [^3] are and why they are useful. Finally, we'll wrap up the article on Azure Advisor [^4], which gives useful tips that you might want to know in your cloud infrastructure.
 
 ## Azure Portal
 To start, we'll go over what you'll be engaging with on a regular basis, the Azure Portal.    
