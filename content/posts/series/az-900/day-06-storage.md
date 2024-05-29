@@ -1,7 +1,7 @@
 ---
 title: "AZ-900 Day 06: Storage"
 date: 2024-05-06T15:12:58-05:00
-description: ""
+description: "That's a lot of storage!!"
 draft: true
 type: "post"
 tags: ["az-900", "azure", "devops", "series"]
@@ -11,14 +11,13 @@ showTableOfContents: true
 ![Cover Art](/images/posts/series/az-900/day-06/cover.png)
 
 ## Introduction 
-Storage Account = Unique Azure Namespace
-- Every object in Azure has its own web address
-- Example
-	- acloudguru.`<storage-type>`.core.windows.net
+In this article we'll be going over the storage options you have in Azure. This topic is quite in depth as there are many options to talk about. A short summary as to what will be covered will be as such. First we'll start off with **Blob Storage**, what blobs are, the blob types and blob tiers. Next we'll go over **Disks, Files, and Archives** and where you would use them in your infrastructure. After that, we need some way to keep data safe, so we'll go over **Storage Redundancy**. Then, we'll talk about how fast you want your I/O operations to function with different **Premium Performance Options**. Finally, we'll go over **Migration Options** to move you on-site data to the cloud. Whew, that is a lot to go over, so lets get started!   
 
-## Section 6.1: Blob Storage 
-Blob means "Binary Large Object"
-(which is pretty much anything)
+
+## Blob Storage 
+To store any type of data on Azure, you are going to need to setup a storage account, which have to have a unique namespace. This is because every object in Azure has its own web address. For example, say you are storing product images of sneakers for you super famous sneaker store, then you could name the storage account `sneaker-img` which the full name would be `weiseguy.sneaker-img.core.windows.net`. Also, the `sneaker-img` storage account is not just limited to images. In Azure, data stored on a storage account are called **Blobs**, which is an acronym for *Binary Large Objects*. Blobs are pretty much anything you can store on a normal hard drive, like images, text files, or even executable binaries.      
+
+Blobs even have different types that you can take advantage of in Azure. These types are: **Block**, **Append**, and **Page**. A **Block Blob** is made up of individually managed blocks of data and is primarily used to store text and binary data up to 4.7TB. An **Append Blob** are block blobs that are optimized for append operations and are commonly seen used for logging where data is constantly appended. Finally, a **Page Blob** is a blob type that can have any part of the file could be accessed at any time, for example a virtual hard drive and can store files up to 8TB.  
 
 ### Storage Levels
 - Storage Account
@@ -32,17 +31,13 @@ Blob means "Binary Large Object"
 - Log Files - Write to log files regardless of size a frequency
 - Data Store - Store any kind of data at scale, such as for archiving, backup, restore and disaster recovery
 
-### Blob Types 
-1. Block - Store text and binary data up to 4.7TB. Made up of individually managed blocks of data
-2. Append - Block blobs that are optimized for append operations. Works well for logging where data is constantly appended
-3. Page - Store files up to 8TB. Any part of the file could be accessed at any time, for example a virtual hard drive
 
 ### Pricing Tiers
 - Hot - Frequently accessed files. Lower access times and higher access costs.
 - Cool - Lower storage costs and higher access times. Data remains here for at least 30 days.
 - Archive - Lowest costs and highest access times.
 
-## Section 6.2: Disk
+## Disks, Files, and Archives
 
 ### Managed Disk
 - Azure Manages - You don't have to worry about backup and uptime
@@ -54,8 +49,6 @@ Blob means "Binary Large Object"
 - Standard SSD - Standard for production. Higher reliability, scalability and lower latency over HDD
 - Premium SSD - Super fast and high performance. Very low latency. Use for critical workloads
 - Ultra Disk - For the most demanding, data-intensive workloads. Disks are up to 64TB.
-
-## Section 6.3: File
 
 ### On-Premises
 Company -> On-Premises Storage 
@@ -74,7 +67,6 @@ Benefits
 - Hybrid - Supplement or replace your existing on-premises file storage solution
 - Lift and Shift - Move your existing file storage and related services to Azure
 
-## Section 6.4: Archive
 ### Overview
 - Requirements - Policies, legislation and recovery can be requirements for archiving data. These can be very large amounts of data.
 - Lowest Price - The archive tier is the lowest price for storage on Azure. A few dollars a month can get you terabytes of space. 
@@ -83,7 +75,7 @@ Benefits
 - Secure - Fully secure to allow for any personal data such as financial records, medical data and more.
 - Blob - Archive storage is blob storage, so the same tools will work for both
 
-## Section 6.5: Storage Redundancy 
+## Storage Redundancy 
 
 Data redundancy protects against unplanned failures
 
@@ -135,81 +127,7 @@ Maximum redundancy
 3. Protect against primary region failure and primary region zone failure
 4. Can also configure read access from secondary region for high availability
 
-## Section 6.6: Moving Data
-Concept: Moving Data into and out of Azure Storage
-Different solution based on:
-- Transfer frequency (occasional/continuous)
-- Data size
-- Network bandwidth
-
-**AZ-900 focus for smaller, occasional transfers:**
-- AzCopy
-- Azure Storage Explorer
-- Azure File Sync
-
-
-### AzCopy
-CLI utility
-1. Transfer blobs and Azure Files
-2. Useful for scripting data transfers
-
-```
-azcopy cp "funny-llamas.mp4" "https://mystorageaccount.blob.core.windows.net/my-container"
-```
-
-### Storage Explorer
-GUI interaction
-1. Downloaded application
-2. User-friendly graphical interface 
-	- Drag-and-drop interactions
-3. Move all storage account formats
-
-### Azure File Sync
-Synchronize Azure Files with On-Prem File Servers
-Local file server performance + cloud availability
-Use cases:
-- Backup local file server
-- Synchronize files between multiple on-prem locations
-- Remote users access Azure Files
-- Transition to only Azure Files for file server
-
-## Section 6.7: Additional Migration Options
-
-### Azure Data Box
-Scenario: Transfer LOTS of data and/or limited bandwidth
-- Lots = Too much to transfer over the internet
-- Relative to available network bandwidth
-- Offline data transfer to/from Azure
-- Copy data to physical data storage device (Data Box)
-	- Encrypted 
-	- Rugged
-- Ship Data Box to/from Azure
-	- **To Azure**: Data Box data transferred to storage account
-	- **From Azure**: Data Box delivered to on-prem location for on-site transfer
-
-### Data Box Use Cases
-- Initial bulk data migration
-- Disaster Recovery
-	- Restore Azure backup to on-premises location
-- Security requirements
-	- Sensitive data that cannot be sent over the internet
-
-### Azure Migrate
-Migrate non-Azure resources into Azure
-- Servers
-- Databases
-- Applications
-
-Includes, but not limited to, migration to storage acccounts
-
-### Azure Migrate Scenario: Migrate Datacenter to Azure
-- Discover dependent resources to migrate
-- Migrate VMs
-- Migrate databases to managed database services (e.g., Azure SQL).
-- Migrate on-prem applications and dependencies
-- Migrate bulk data with Data Box
-
-## Section 6.8: Premium Performance Options
+## Premium Performance Options
 Premium Performance Options for Low-Latency Requirements
 - Stored on SSDs
 - Key considerations:
@@ -247,4 +165,76 @@ Supported Storage Types
 	- Ideal for high-performance enterprise (file server) applications
 	- Supports both Server Message Block (SMB) and Network File System (NFS) file shares
 		- Windows/Linux file shares
+
+## Moving Data
+Concept: Moving Data into and out of Azure Storage
+Different solution based on:
+- Transfer frequency (occasional/continuous)
+- Data size
+- Network bandwidth
+
+**AZ-900 focus for smaller, occasional transfers:**
+- AzCopy
+- Azure Storage Explorer
+- Azure File Sync
+
+
+### AzCopy
+CLI utility
+1. Transfer blobs and Azure Files
+2. Useful for scripting data transfers
+
+```
+azcopy cp "funny-llamas.mp4" "https://mystorageaccount.blob.core.windows.net/my-container"
+```
+
+### Storage Explorer
+GUI interaction
+1. Downloaded application
+2. User-friendly graphical interface 
+	- Drag-and-drop interactions
+3. Move all storage account formats
+
+### Azure File Sync
+Synchronize Azure Files with On-Prem File Servers
+Local file server performance + cloud availability
+Use cases:
+- Backup local file server
+- Synchronize files between multiple on-prem locations
+- Remote users access Azure Files
+- Transition to only Azure Files for file server
+
+### Azure Data Box
+Scenario: Transfer LOTS of data and/or limited bandwidth
+- Lots = Too much to transfer over the internet
+- Relative to available network bandwidth
+- Offline data transfer to/from Azure
+- Copy data to physical data storage device (Data Box)
+	- Encrypted 
+	- Rugged
+- Ship Data Box to/from Azure
+	- **To Azure**: Data Box data transferred to storage account
+	- **From Azure**: Data Box delivered to on-prem location for on-site transfer
+
+### Data Box Use Cases
+- Initial bulk data migration
+- Disaster Recovery
+	- Restore Azure backup to on-premises location
+- Security requirements
+	- Sensitive data that cannot be sent over the internet
+
+### Azure Migrate
+Migrate non-Azure resources into Azure
+- Servers
+- Databases
+- Applications
+
+Includes, but not limited to, migration to storage acccounts
+
+### Azure Migrate Scenario: Migrate Datacenter to Azure
+- Discover dependent resources to migrate
+- Migrate VMs
+- Migrate databases to managed database services (e.g., Azure SQL).
+- Migrate on-prem applications and dependencies
+- Migrate bulk data with Data Box
 

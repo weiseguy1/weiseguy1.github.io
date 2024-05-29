@@ -12,10 +12,7 @@ showTableOfContents: true
 
 ## Introduction
 
-Hey everyone, welcome back to the AZ-900 series. In todays article, we are going to go over Cloud Concepts in Azure. Specifically, we'll be covering:
-
-- Terminology of Cloud Computing [^1]
-- The Consumption-based Model [^2]  
+Hey everyone, welcome back to the AZ-900 series. In todays article, we are going to go over Cloud Concepts in Azure. Specifically, we'll be covering some important terminology in Cloud Computing [^1]. Next, we'll talk about the Consumption-based Model [^2] and the economics around it. Then, we will look at Coud Service Models. Finally, we'll wrap it up with information about Cloud Architecture Models. With that said, let's get into it!
 
 
 ## Terminology of Cloud Computing
