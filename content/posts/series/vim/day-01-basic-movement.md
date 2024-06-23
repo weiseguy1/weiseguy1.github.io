@@ -1,5 +1,5 @@
 ---
-title: "Vim Day 01: Movement"
+title: "Vim Series (Day 01): Movement"
 date: 2022-08-21T13:27:08-05:00
 description: "The 1st part of the vim series"
 author: "Kyle Weise"

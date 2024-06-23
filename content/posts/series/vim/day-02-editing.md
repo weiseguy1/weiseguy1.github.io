@@ -1,5 +1,5 @@
 ---
-title: "Vim Day 02: Editing"
+title: "Vim Series (Day 02): Editing"
 date: 2022-08-29T11:30:29-05:00
 description: "The 2nd part of the vim series"
 author: "Kyle Weise"

@@ -1,5 +1,5 @@
 ---
-title: "Vim Day 03: Line Movement"
+title: "Vim Series (Day 03): Line Movement"
 date: 2022-09-07T09:41:46-05:00
 description: "The 3rd part of the vim series"
 author: "Kyle Weise"

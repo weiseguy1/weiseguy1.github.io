@@ -1,5 +1,5 @@
 ---
-title: "Vim Day 04: Buffers & Splits"
+title: "Vim Series (Day 04): Buffers & Splits"
 date: 2022-09-08T21:19:20-05:00
 description: "The 4th and final part of how to use vim"
 author: "Kyle Weise"
