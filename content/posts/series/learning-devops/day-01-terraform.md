@@ -2,7 +2,7 @@
 title: "Learning Devops (Day 01): Terraform"
 date: 2024-06-23T10:31:25-05:00
 description: ""
-draft: true
+draft: false
 type: "post"
 tags: ["series", "devops", "terraform"]
 showTableOfContents: true
