@@ -2,9 +2,9 @@
 title: "How to Fix Networking in Proxmox"
 date: 2024-06-29T19:48:03-05:00
 description: "Fixing Guest OS networking in Proxmox"
-draft: true
+draft: false
 type: "post"
-tags: []
+tags: ["networking", "homelab", "troubleshooting"]
 showTableOfContents: true
 ---
 
