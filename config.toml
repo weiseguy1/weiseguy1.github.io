@@ -10,6 +10,7 @@ theme = 'gokarna'
   description = "The Journey from Sys Admin to Dev Ops"
   ShowBackToTopButton = true
   metaKeywords = ["blog", "gokarna", "hugo"]
+  togglePreviousAndNextButtons = "true"
 
 [markup]
   [markup.tableOfContents]
