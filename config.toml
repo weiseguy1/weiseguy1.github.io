@@ -4,6 +4,7 @@ languageCode = "en-us"
 
 title = 'Weiseguy'
 theme = 'gokarna'
+enableEmoji = true
 
 [params]
   avatarURL = "/images/logos/logo.png"
