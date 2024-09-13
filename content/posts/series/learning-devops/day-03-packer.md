@@ -21,4 +21,19 @@ To answer the second question as to, *"Why is it useful?"*. Packer creates ident
 
 To install Packer for your specific operating system, you can go to the [Packer.io install](https://developer.hashicorp.com/packer/install) page. There you can find instructions on how to install the latest version of Packer for Mac, Windows and Linux. 
 
+### HCL or JSON
+
+As stated earlier, you have your choice of writing your Packer configuration in either HCL or JSON. The differences are:
+
+ | JSON | HCL |
+ | --- | --- |
+ | The initial configuration language of Packer | HashiCorps own configuration language added in v1.5.0 |
+ | Recognizable syntax | Slight learning curve | 
+ | No easy way to add comments | Comment support |
+ | Harder to read | Easier to read |
+
+With this in mind, I personally like HCL as it is easier to read. If you've read my post on [Terraform](/posts/series/learning-devops/day-01-terraform/), then you've worked with HCL. Also, HCL integrates better with HashiCorp products (Suprise, or not :grin: ). 
+
 ## Wrapping it up
+
+
